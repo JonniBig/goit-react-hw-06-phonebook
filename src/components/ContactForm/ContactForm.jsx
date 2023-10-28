@@ -44,7 +44,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <form className={css.form} onSubmit={handleSubmit}>
+    <form className={css.formContainer} onSubmit={handleSubmit}>
       <label>
         <input
           type="text"
@@ -70,7 +70,7 @@ export const ContactForm = () => {
           className={css.formInput}
         />
       </label>
-      <button className={css.btnDelete}>Add contact</button>
+      <button className={css.formButton}>Add contact</button>
     </form>
   );
 };
