@@ -19,16 +19,16 @@ export const ContactsList = () => {
 
   const contactsFilter = getContactFromFilter();
   return (
-    <ul className={css.list}>
+    <ul className={css.contactsList}>
       {contactsFilter.map(contact => {
         const { id, name, number } = contact;
         return (
-          <li className={css.contacts} key={id}>
+          <li className={css.listItem} key={id}>
             <span>{name}:</span>
             <span>{number}</span>
             <button
               type="button"
-              className={css.btnDelete}
+              className={css.contactsListBtn}
               onClick={() => handleDelete(id)}
             >
               Delete
