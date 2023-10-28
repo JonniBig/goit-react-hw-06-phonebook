@@ -11,7 +11,6 @@ export const Filter = ({ contacts }) => {
 
   return (
     <>
-      <p>Find contacts by name</p>
       <input
         type="text"
         value={filter}
