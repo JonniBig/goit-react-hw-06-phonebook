@@ -10,7 +10,7 @@ export const App = () => {
   return (
     <div className={css.container}>
       <h1>Phonebook</h1>
-      {contacts.length > 0 && <ContactForm />}
+      {contacts.length > 0 || <ContactForm />}
       <h2>Contacts</h2>
       <Filter />
       <ContactsList />
