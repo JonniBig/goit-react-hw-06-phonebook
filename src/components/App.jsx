@@ -5,12 +5,10 @@ import css from './App.module.scss';
 import { useSelector } from 'react-redux';
 
 export const App = () => {
-  const contacts = useSelector(state => state.contacts);
-
   return (
     <div className={css.container}>
       <h1>Phonebook</h1>
-      {contacts.length > 0 || <ContactForm />}
+      <ContactForm />
       <h2>Contacts</h2>
       <Filter />
       <ContactsList />
