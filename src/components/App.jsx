@@ -2,7 +2,6 @@ import { ContactForm } from './ContactForm/ContactForm';
 import { ContactsList } from './ContactList/Contactlist';
 import { Filter } from './Filter/Filter';
 import css from './App.module.scss';
-import { useSelector } from 'react-redux';
 
 export const App = () => {
   return (

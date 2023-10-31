@@ -3,10 +3,11 @@ import React, { useState } from 'react';
 import { nanoid } from 'nanoid';
 import { addContact } from '../../redux/contactSlice';
 import { useDispatch, useSelector } from 'react-redux';
+import { selectContacts } from 'redux/selectors';
 
 export const ContactForm = () => {
   const dispatch = useDispatch();
-  const contacts = useSelector(state => state.contacts);
+  const contacts = useSelector(selectContacts);
 
   const handleAddContact = userContacts => {
     const hasDuplicateContacts = contacts.some(
